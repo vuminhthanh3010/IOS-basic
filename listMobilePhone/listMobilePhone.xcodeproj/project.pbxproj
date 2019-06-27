@@ -12,6 +12,7 @@
 		EA098C6B22C4AA38008C3E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA098C6922C4AA38008C3E1D /* Main.storyboard */; };
 		EA098C6D22C4AA39008C3E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA098C6C22C4AA39008C3E1D /* Assets.xcassets */; };
 		EA098C7022C4AA39008C3E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA098C6E22C4AA39008C3E1D /* LaunchScreen.storyboard */; };
+		EA098C7C22C4BA37008C3E1D /* InfoPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098C7B22C4BA37008C3E1D /* InfoPhone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EA098C6C22C4AA39008C3E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA098C6F22C4AA39008C3E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA098C7122C4AA39008C3E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA098C7B22C4BA37008C3E1D /* InfoPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPhone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EA098C6922C4AA38008C3E1D /* Main.storyboard */,
 				EA098C6C22C4AA39008C3E1D /* Assets.xcassets */,
 				EA098C6E22C4AA39008C3E1D /* LaunchScreen.storyboard */,
+				EA098C7B22C4BA37008C3E1D /* InfoPhone.swift */,
 				EA098C7122C4AA39008C3E1D /* Info.plist */,
 			);
 			path = listMobilePhone;
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA098C7C22C4BA37008C3E1D /* InfoPhone.swift in Sources */,
 				EA098C6822C4AA38008C3E1D /* ViewController.swift in Sources */,
 				EA098C6622C4AA38008C3E1D /* AppDelegate.swift in Sources */,
 			);

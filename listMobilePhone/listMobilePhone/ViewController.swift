@@ -17,6 +17,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         listPhone.delegate      =   self
     }
     
+    var sendData:UserDefaults   =   UserDefaults()
+    
     var imgPhone    =   ["samsung-galaxy-s10","oppo-f11","iphone-xs-max","huawei-p30-lite","iphone-x","huawei-mate-20"]
     
     var namePhone   =   ["Điện thoại Samsung S10+","Điện thoại OPPO F11","Điện thoại iPhone Xs Max ","Điện thoại Huawei P30 Lite","Điện thoại iPhone X 64GB","Điện thoại Huawei Mate 20"]
@@ -57,7 +59,20 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return 140
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("click")
+        let sb  =   UIStoryboard(name: "Main", bundle: nil)
+        let mh2 =   sb.instantiateViewController(withIdentifier: "manhinh2") as! InfoPhone
+        
+        let sendName:String = namePhone[indexPath.row]
+        let sendImg:String = imgPhone[indexPath.row]
+        let sendPrice:String = pricePhone[indexPath.row]
+        
+        sendData.set(sendName, forKey: "name")
+        sendData.set(sendImg, forKey: "image")
+        sendData.set(sendPrice, forKey: "price")
+        
+        
+        
+        self.navigationController?.pushViewController(mh2, animated: true)
     }
 
 }
