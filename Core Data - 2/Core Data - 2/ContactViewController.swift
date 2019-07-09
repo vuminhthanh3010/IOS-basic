@@ -73,7 +73,7 @@ class ContactViewController: UIViewController,UITableViewDelegate,UITableViewDat
         let delete  =   UITableViewRowAction(style: .destructive, title: "Delete") { (action, index ) in
             self.deleteContact(indexPath: indexPath)
             self.fetchData()
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.deleteRows(at: [indexPath], with: .automatic )
         }
         return [delete]
     }
